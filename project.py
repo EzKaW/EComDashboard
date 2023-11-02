@@ -145,7 +145,7 @@ with col2:
     st.metric("Average Frequency", value=avg_frequency)
 
 with col3:
-    avg_frequency = format_currency(rfm_df.monetary.mean(), "AUD", locale='es_CO') 
+    avg_frequency = format_currency(rfm_df.monetary.mean(), "BRL", locale='es_CO') 
     st.metric("Average Monetary", value=avg_frequency)
 
 def abbreviate_customer_id(customer_id):
